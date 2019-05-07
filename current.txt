@@ -1,0 +1,2 @@
+d34ceedac15d00507a390491b8770567d4b1bfefcde20aece5910798d68aadb6 vendor.renesas.graphics.composer@1.0::types
+b73da54537c68b344cc1d7614fd1732b4e1d7c31fe2e3194cc06a296cbfbe045 vendor.renesas.graphics.composer@1.0::IComposer
