@@ -1,0 +1,13 @@
+package vendor.renesas.graphics.composer@2.0;
+
+import android.hardware.graphics.composer@2.1::Error;
+import android.hardware.graphics.composer@2.1::Config;
+import android.hardware.graphics.composer@2.3;
+
+interface IComposer extends android.hardware.graphics.composer@2.3::IComposer {
+    @entry
+    @callflow(next="*")
+    setEVSCameraData(handle buffer, int8_t currDisplay) generates (Error error);
+    getDisplayHeight() generates(Config height);
+    getDisplayWidth()  generates(Config width);
+};
