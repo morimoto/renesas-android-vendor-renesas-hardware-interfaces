@@ -64,6 +64,26 @@ Return<uint32_t> Composer::getDisplayWidth() {
     return uint32_t {};
 }
 
+Return<::android::hardware::graphics::composer::V2_1::Error> Composer::cmsReset(int8_t currDisplay) {
+    // TODO implement
+    return ::android::hardware::graphics::composer::V2_1::Error {};
+}
+
+Return<::android::hardware::graphics::composer::V2_1::Error> Composer::cmsSetLut(const hidl_vec<uint32_t>& buff, int8_t currDisplay) {
+    // TODO implement
+    return ::android::hardware::graphics::composer::V2_1::Error {};
+}
+
+Return<::android::hardware::graphics::composer::V2_1::Error> Composer::cmsSetClu(const hidl_vec<uint32_t>& buff, int8_t currDisplay) {
+    // TODO implement
+    return ::android::hardware::graphics::composer::V2_1::Error {};
+}
+
+Return<void> Composer::cmsGetHgo(int8_t currDisplay, cmsGetHgo_cb _hidl_cb) {
+    // TODO implement
+    return Void();
+}
+
 
 // Methods from ::android::hidl::base::V1_0::IBase follow.
 

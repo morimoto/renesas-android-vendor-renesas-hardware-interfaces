@@ -10,4 +10,9 @@ interface IComposer extends android.hardware.graphics.composer@2.3::IComposer {
     setEVSCameraData(handle buffer, int8_t currDisplay) generates (Error error);
     getDisplayHeight() generates(Config height);
     getDisplayWidth()  generates(Config width);
+
+    cmsReset(int8_t currDisplay) generates (Error error);
+    cmsSetLut(vec<uint32_t> buff, int8_t currDisplay) generates (Error error);
+    cmsSetClu(vec<uint32_t> buff, int8_t currDisplay) generates (Error error);
+    cmsGetHgo(int8_t currDisplay) generates (vec<uint32_t> buff);
 };

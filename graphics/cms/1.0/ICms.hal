@@ -1,0 +1,11 @@
+package vendor.renesas.graphics.cms@1.0;
+interface ICms {
+    cmsReset() generates (Error error);
+    cmsSetLut(vec<uint32_t> buff) generates (Error error);
+    cmsSetClu(vec<uint32_t> buff) generates (Error error);
+    cmsGetHgo() generates (vec<uint32_t> buff);
+    cmsSetContrast(float contrast) generates (Error error);
+    cmsSetBrightness(float brightness) generates (Error error);
+    cmsSetTint(float angle) generates (Error error);
+    cmsSetColor(float gain) generates (Error error);
+};

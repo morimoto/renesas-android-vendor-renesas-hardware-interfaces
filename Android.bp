@@ -4,4 +4,5 @@ subdirs = [
 
 hidl_package_root {
     name: "vendor.renesas",
+    path: "vendor/renesas/hardware/interfaces",
 }
