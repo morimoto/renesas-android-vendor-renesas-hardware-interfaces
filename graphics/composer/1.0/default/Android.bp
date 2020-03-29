@@ -7,7 +7,6 @@ cc_library_shared {
     ],
     shared_libs: [
         "libhidlbase",
-        "libhidltransport",
         "libutils",
         "vendor.renesas.graphics.composer@1.0",
         "android.hardware.graphics.composer@2.1",
