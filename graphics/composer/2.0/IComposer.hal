@@ -2,17 +2,21 @@ package vendor.renesas.graphics.composer@2.0;
 
 import android.hardware.graphics.composer@2.1::Error;
 import android.hardware.graphics.composer@2.1::Config;
-import android.hardware.graphics.composer@2.3;
+import android.hardware.graphics.composer@2.4;
 
-interface IComposer extends android.hardware.graphics.composer@2.3::IComposer {
+interface IComposer extends android.hardware.graphics.composer@2.4::IComposer {
     @entry
     @callflow(next="*")
-    setEVSCameraData(handle buffer, int8_t currDisplay) generates (Error error);
+    setEVSCameraData(handle buffer, int8_t currDisplay) generates (
+        android.hardware.graphics.composer@2.1::Error error);
     getDisplayHeight() generates(Config height);
     getDisplayWidth()  generates(Config width);
 
-    cmsReset(int8_t currDisplay) generates (Error error);
-    cmsSetLut(vec<uint32_t> buff, int8_t currDisplay) generates (Error error);
-    cmsSetClu(vec<uint32_t> buff, int8_t currDisplay) generates (Error error);
+    cmsReset(int8_t currDisplay) generates (
+        android.hardware.graphics.composer@2.1::Error error);
+    cmsSetLut(vec<uint32_t> buff, int8_t currDisplay) generates (
+        android.hardware.graphics.composer@2.1::Error error);
+    cmsSetClu(vec<uint32_t> buff, int8_t currDisplay) generates (
+        android.hardware.graphics.composer@2.1::Error error);
     cmsGetHgo(int8_t currDisplay) generates (vec<uint32_t> buff);
 };
